@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridarea</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas:'H H H H H'
+            'M C C J J'
+            'M U U U K'  ;
+            height: 100px;
+                                 
+        }
+        .a{
+            border: 2px solid black;
+            background-color: blue;
+            grid-area: H;
+        }
+        .b{
+            border: 2px solid black;
+            background-color: blue;
+            grid-area:M;
+        }
+        .c{
+            border: 2px solid black;
+            background-color: blue;
+            grid-area:C;
+        }
+        .d{
+            border: 2px solid black;
+            background-color: blue;
+            grid-area: J;
+        }
+        .e{
+            border: 2px solid black;
+            background-color: blue;
+            grid-area: U;
+        }
+        .f{
+            border: 2px solid black;
+            background-color: blue;
+            grid-area:K ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="a">H</div>
+         <div class="b">M</div>
+         <div class="c">C</div>
+         <div class="d">J</div>
+         <div class="e">U</div>
+         <div class="f">K</div>
+    </div>
+</body>
+</html>

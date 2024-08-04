@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 2px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .background {
+            height: 650px;
+            width: 100%;
+            background-color: aqua;
+        }
+
+        .one {
+            background-color: white;
+            height: 10%;
+        }
+
+        .green {
+            height: 98%;
+            width: 97%;
+            background-color: green;
+        }
+        .two{
+            height: 80%;
+            width: 100%;
+            background-color: white;
+        }
+        .blue{
+            height: 31%;
+            width: 99%;
+            background-color: blue;
+            margin: 2px;
+        }
+        .three{
+            height: 10% ;
+            width:100% ;
+            background-color: white;
+        }
+        .gray{
+            height: 21% ;
+            width: 99%;
+            background-color: gray;
+            margin: 2px;
+        }
+        @media screen and (min-width:400px)
+        {
+        .gray {
+            height: 48% ;
+            width: 48% ;
+           }
+        .one {
+            height:20% ;
+        }
+        .two{
+            height:60% ;
+        }
+        .three{
+            height: 20%;
+        }
+        }
+        @media screen and (min-width:800px)
+        {
+        .one{
+            height:40% ;
+        }
+        .two{
+            height:40% ;
+        }
+        .three{
+            height: 20%;
+        }
+        .blue{
+            height: 98%;
+            width:32% ;
+        }  
+        .gray{
+            height: 98%;
+            width: 24%;
+        }   
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="background">
+            <div class="one">
+                <div class="green"></div>
+            </div>
+
+            <div class="container two">
+                <div class="container blue"></div>
+                <div class="container blue"></div>
+                <div class="container blue"></div>
+            </div>
+            
+            <div class="container three">
+                <div class="container gray"></div>
+                <div class="container gray"></div>
+                <div class="container gray"></div>
+                <div class="container gray"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
